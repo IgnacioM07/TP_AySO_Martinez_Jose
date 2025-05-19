@@ -1,0 +1,500 @@
+exit
+pwd
+echo hola
+echo Buen dia
+echo $HOME
+LS
+ls
+ls -l
+mkdir clase 4
+ls -l
+cd clase/
+cat > texto1.txt
+ls -l
+cat texto1.txt 
+ls -l
+cat << FIN > texto2.txt
+linea 4
+linea 5
+linea 6
+FIN
+
+ls -l
+cat texto2
+cat texto2.txt
+cat *.txt
+cat texto1.txt >> texto2.txt
+ls -l
+cat << EOF >texto3.txt
+linea 7
+linea 8
+linea 9
+EOF
+
+ls -l
+cat texto1.txt texto3.txt >texto4.txt
+ls -l
+cat texto4.txt
+cat hola.txt
+echo hola > hola.txt
+ls -l
+cat hola.txt
+echo chau
+echo chau >> hola.txt
+hola.txt
+man grep
+greg hola.txt
+grep hola.txt
+grep 7 texto4.txt
+grep 7 texto4,txt > filtro7.txt
+ls -l
+cat filtro7.txt
+grep 7 texto4.txt > filtro7.txt
+cat filtro7.txt
+cat history
+history
+history > mihistorial.txt
+ls -l
+grep 8 texto4.txt
+grep -v 8 texto4.txt
+grep -c 8 teexto 4.txt
+grep -c 8 texto4.txt
+grep -c linea texto.txt
+grep -c linea texto4.txt
+cd ..
+pwd
+tree
+apt install tree
+sudo apt install tree
+tree
+sudo snap install tree
+tree
+pwd
+cd clase
+pwd
+touch texto5.txt
+ls -l
+cp texto2.txt textocp.txt
+ls -l
+cat textocp.txt
+cat textoc2.txt
+cat texto2.txt
+mv textocp.txt textocp2.txt
+ls -l
+rm textocp2.txt /home/vagrant
+mv textocp2.txt /home/vagrant
+ls -l
+mv mihistorial.txt /home/vagrant
+ls -l
+ls -l /home/vagrant
+cd ..
+rm clase/
+rm 4/
+rm -r clase4/
+rm -r clase/
+rm -r 4/
+ls -l
+whoami
+id
+w
+pwd
+mkdir dir1 dir2 dir3
+tree
+ls -l
+mkdir -p dog1/dog2/dog3
+tree
+ls -l dog1/
+mkdir -p {clase1,clase2}/{teoria,practica}
+tree
+mkdir -p {compra1/vendedor{1..3},compra2/{vendedor{1..3},repositor}}
+tree
+cat /etc/passwd
+cat /etc/group
+cat /etc/shadow
+sudo cat /etc/shadow
+groupadd Alumnos
+sudo groupadd Alumnos
+cat /etc/group
+useradd -m -s /bin/bash -c "Alumno pepe" -g Alumnos pepe
+sudo useradd -m -s /bin/bash -c "Alumno pepe" -g Alumnos pepe
+cat /etc/passwd
+cat /etc/group
+passwd pepe
+sudo passwd pepe
+su pepe
+su - pepe
+w
+history
+exit
+ls -l
+mkdir clase5
+ls -l
+cd clase5
+echo hola > texto1.txt
+ls -l
+cat texto1.txt
+ls -l
+chmod 666 texto1.txt
+ñs -l
+ls -l
+chmod 764 texto1.txt
+ls -l
+echo chau > texto2.txt
+ls -l
+chmod 644 texto2.txt
+ls -l
+cd ..
+ls -l
+chmod -R 777 clase5/
+ls -l
+cd clase5
+ls -l
+chmod 700 texto1.txt
+ls -l
+chmod 600 texto1.txt 
+ls -l
+chmod 610 texto1.txt 
+ls -l
+chmod 601 texto1.txt 
+ls -l
+chmod g+r texto1.txt 
+ls -l
+echo Mi primer script
+echo Funciono ok
+cat << FIN > script1
+pwd
+ls -l
+echo Mi primer script
+echo Funcionó ok
+FIN
+
+ls -l
+cat script1
+bash script1
+vim script2.sh
+ls -l
+cat script2.sh 
+chmod 764 script2.sh
+ls -l
+./script2.sh 
+ls -l
+cd ..
+pwd
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub 
+ls -la
+ls -la .ssh/
+cat .ssh/id_ed25519.pub
+pwd
+mkdir repogit
+cd repogit
+git clone git@github.com:IgnacioM07/TP_AySO_114_Martinez_Jose.git
+ls -l
+cd TP_AySO_114_Martinez_Jose/
+ls -l
+cat README.md 
+cat /etc/os-release
+man grep
+[200~
+grep -i Home_url /etc/os-release
+grep -i Home_url /etc/os-release > datos_url.txt
+ls -l
+git status
+git add .
+git status
+git commit -m "Subo el archivo datos_url"
+git config --global user.email "martinezignacio07@hotmail.com"
+git config --global user.name "IgnacioM07"
+git commit -m "Subo el archivo datos_url"
+git status
+git push
+cd ..
+vagrant halt
+cd ..
+vagrant halt
+cd ~/repogit/TP_AySO_114_Martinez_Jose
+vagrantt
+cd ~/repogit/TP_AySO_114_Martinez_Jose
+vagrant halt
+a vavvvvvvvvvgrnthttcdcdcdcccd
+cd ..vagrant halt
+exit
+cd ~/repogit/TP_AySO_114_Martinez_Jose/
+exit
+pwd
+ls
+cd ~/repogit/TP_AySO_114_Martinez_Jose/
+ls -la
+cat datos_url.txt 
+pwd
+cat ~/.ssh/id_ed25519.pub
+ssh-keygen -lf ~/.ssh/id_ed25519.pub
+exit
+pwd
+et
+xix
+clear
+~/repogit/TP_AySO_114_Martinez_Jose/
+pwd
+~/repogit/TP_AySO_114_Martinez_Jose$
+clear
+pwd
+cd ~/repogit/TP_AySO_114_Martinez_Jose/
+PWD
+pwd
+git status
+ls
+whoami
+hostname
+exit
+clear
+cd ~/repogit/TP_AySO_114_Martinez_Jose/
+ls
+whoami > datos_usuario.txt
+ls
+whoami
+cat datos_usuario.txt
+echo "Hoy es $(date)
+echo
+
+echo "Hoy es $(date)"
+clear
+rm datos_usuario.txt 
+ls
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls
+cat datos_usuario.txt
+pwd
+ls
+cat datos_usuario.txt 
+clear
+git add .
+git status
+clear
+git status
+git config --gloabal user.email "martinezignacio07@hotmail.com"
+clear
+git status
+git config --global user.email "martinezignacio07@hotmail.com"
+git config --global user.name "IgnacioM07"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+cat ~/.config
+cat ~/.gitconfig
+git push
+cat datos_url.txt 
+man 
+man grep
+man grep -i HOME_URL /etc/os-release
+clear
+grep -i HOME_URL /etc/os-release
+grep home_url /etc/os-release
+clear
+git status
+pwd
+cat /proc/cpuinfo
+grep "model name" /proc/cpuinfo 
+uptime
+clear
+grep "model name" /proc/cpuinfo 
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt 
+nproc
+git status
+git add datos_usuario.txt 
+git commit -m "UPDATE: agregado modelo de CPU a datos_usuario.txt"
+git push
+exit
+ls 
+ls -l
+cat $HOME/-ssh/*.pub
+cat $HOME/.ssh/*.pub
+pwd
+cd ..
+ls
+clear
+pwd
+vagrant ssh
+cd /vagrant
+cd /home/vagrant
+pwd
+clear
+cd
+cd /home
+pwd
+cd
+pwd
+clear
+ls
+cat snap
+mkdir repogit
+clear
+ls -l
+ls repogit
+pwd
+clear
+exit
+clear
+pwd
+ls
+cd repogit
+ls
+cd TP_AySO_114_Martinez_Jose/
+LS
+ls
+cd repogit
+cd ..
+ls
+rm TP_AySO_114_Martinez_Jose/
+rm -r TP_AySO_114_Martinez_Jose/
+pwd
+ls
+cd repogit
+ls
+rm -rf TP_AySO_114_Martinez_Jose/
+ls
+mkdir repogit
+ls
+rm -rf repogit/
+ls
+clear
+pwd
+git clone git@github.com:IgnacioM07/TP_AySO_Martinez_Jose.git
+ls
+cd
+pwd
+ls
+cd repogiy
+cd repogit/
+ls
+cd TP_AySO_Martinez_Jose/
+ls
+git status
+pwd
+ls -l
+clear
+pwd
+cat/etc/os-release
+cat /etc/os-release
+man grep
+grep HOME_URL/etc/os-release
+grep HOME_URL /etc/os-release
+grep home/url /etc/os-release
+grep -i Home_url /etc/os-release
+grep -i Home_url /etc/os-release > datos_url.txt
+ls
+cat datos_url.txt 
+whoami
+clear
+pwd
+cat /etc/os-realse
+cat /etc/os-release
+clear
+pwd
+ls
+cat datos_url.txt 
+clear
+whoami
+echo "Usuario = $(whoami)" > datos_usuario.txt
+ls
+cat datos_usuario.txt 
+git add .
+git status
+git config --global user.email "martinezignacio07@hotmail.com"
+git config --global user.name "IgnacioM07"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+git push
+git status
+pwd
+ls
+cat datos_url.txt 
+ls
+cat datos_usuario.txt 
+clear
+grep "model_name" /proc/cpuinfo 
+cat "model_name" /proc/cpuinfo 
+cat "model_name" /proc/cpuinfo -n1
+cat "model_name" /proc/cpuinfo | head -n1
+cat grep "model_name" /proc/cpuinfo | head -n1
+clear
+grep "model name" /proc/cpuinfo 
+grep "model name" /proc/cpuinfo | head -n1
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt 
+git add datos_usuario.txt 
+git status
+git commit -m "feat: Añadiendo informacion de CPU"
+git push
+clear
+pwd
+ls
+cat <<EOF >> README.md
+Alumno: Jose Ignacio Martinez
+División: 114
+Turno: Mañana
+EOF
+
+cat README.md 
+git add README.md datos_usuario.txt 
+git commit -m "ADD: Añadiendo README.md y datos_usuario.txt"
+git status
+git push
+clear
+ls
+cat datos_url.txt 
+cat datos_usuario.txt 
+cat README.md 
+ls
+pwd
+cd ~
+ls
+mkdir -p materia1/uni{1,2,3} materia2/uni{1,2,3}
+ls
+tree -d materia1 materia2
+sudo apt update
+clear
+pwd
+nano script.sh
+chmod 764 script.sh
+./script.sh
+clear
+pwd
+ls
+./script.sh 
+ls
+pwd
+clear
+nano script.sh 
+./script.sh 
+ls
+cleaer
+clearclear
+lelalleeee
+clear
+exithalt
+err
+clearvagrant a
+vagrant halt
+exit
+pwd
+ls
+clearr
+clear
+ls
+cat script.sh 
+mv ~/script.sh ~/repogit/TP_AySO_Martinez_Jose/script_dir.sh
+ls
+cd repogit/
+ls
+cd TP_AySO_Martinez_Jose/
+ls
+pwd
+ls -l script_dir.sh 
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+ls
+pwd
+clear
+pwd
+history -a
